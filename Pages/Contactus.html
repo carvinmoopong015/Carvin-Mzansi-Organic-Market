@@ -1,86 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Mzansi Organic Market</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-    <!-- Header with Navigation -->
-    <header>
-        <img src="/Assets/download.jfif" width="400" height="300">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="Aboutus.html">About Us</a></li>
-                    <li><a href="Product.html">Products</a></li>
-                    <li><a href="Contactus.html">Contact Us</a></li>
-                </ul>
-            </nav>
-    </header>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact Us - Mzansi Organic Market</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <main>
-        <h1>Contact Us:</h1>
-        <table>
-            <tr>
-                <td width="100">Telephone Number</td>
-                <td width="200">(001)-542-0000</td>
-            </tr>
-            <tr>
-                <td width="100">Physical Address:</td>
-                <td width="100">The Farmyard Street, <br/>polokwane,<br/>0700</td> 
-            </tr>
-            <tr>
-                <td width="100">Email Address:</td>
-                <td width="100"><a href="mailto:info@Organic.co.za">Email us...</a></td> 
-            </tr>
-        </table>
-        <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.4739244446355!2d29.513165899999997!3d-23.8728077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6d90c6a1674bd%3A0x24d43f6064fd34f0!2sFood%20Lover&#39;s%20Market%20Farmyard%20Polokwane!5e0!3m2!1sen!2sie!4v1756292630826!5m2!1sen!2sie" 
-            width="600" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        </section>
-        <section>
-            <h1>Enquiries</h1>
-            <form action="#" method="post">
-                <table>
-                    <tr>
-                        <td width="150">Name:</td>
-                        <td><input type="text" name="name" placeholder="Enter your name" required></td>
-                    </tr>
-                    <tr>
-                        <td width="150">Email:</td>
-                        <td><input type="email" name="email" placeholder="Enter your email" required></td>
-                    </tr>
-                    <tr>
-                        <td width="150">Message:</td>
-                    <td>
-                       <textarea rows="5" cols="25" required>
 
-                       </textarea>
-                    </td>
-                    </tr>
-                    <tr>
-                        <td width="100"></td>
-                        <td><input type="submit" name="submit" value="submit"></td>
-                    </tr>
-                </table>
-            </form>
-        </section>
-    </main>
-    <!--foter section-->
-    <footer style="text-align: center;">
-        <p>&copy 2025 Mzansi Organic Market</p>
-        </footer>
-</body>
-</html>
+  <!-- Header -->
+  <header>
+
+  <img src="../Assets/download.jfif" alt="Logo" width="200" height="150">
+    <nav>
+       <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./Aboutus.html">About Us</a></li>
+        <li><a href="./Product.html">Shop</a></li>
+        <li><a href="./blog.html" class="active">Blog</a></li>
+        <li><a href="./Contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="container">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Please fill in the form below or reach out via our contact details.</p>
+
+    <h2>Our Contact Details</h2>
+    <p>Email: support@mzansiorganic.co.za</p>
+    <p>Phone: +27 12 345 6789</p>
+    <p>Address: 0700 Buzworx Ave, Polokwane, South Africa</p>
+  </section>
+
+
+    
+    <section class="container">
+  <h1>Contact Us</h1>
+  <p>We’d love to hear from you! Please fill in the form below or reach out via our contact details.</p>
+
+  <form>
+    <label for="name">Full Name</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Message</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+  <h2>Find Us</h2>
+  <div class="map-container">
+    <iframe 
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.4739244446355!2d29.513165899999997!3d-23.8728077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6d90c6a1674bd%3A0x24d43f6064fd34f0!2sFood%20Lover&#39;s%20Market%20Farmyard%20Polokwane!5e0!3m2!1sen!2sie!4v1756292630826!5m2!1sen!2sie" 
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Mzansi Organic Market | All Rights Reserved</p>
+  <div class="socials">
+    <a href="https://facebook.com/mzansiorganicmarket" target="_blank"><i class="fab fa-facebook"></i></a>
+   <a href="https://whatsapp.com/mzansiorganicmarket" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://instagram.com/mzansiorganicmarket" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

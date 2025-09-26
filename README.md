@@ -1,2 +1,2 @@
-# Carvin Mzansi Organic Market
+# Carvin
 
