@@ -38,6 +38,32 @@ header nav a.active {
   color: #ffd54f; /* Yellow highlight */
 }
 
+/* Navigation links structure */
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500; /* Slightly bold for readability */
+  font-size: 1rem; /* Set a default font size */
+  letter-spacing: 1px; /* Add some letter spacing for readability */
+  padding: 0.5rem 1rem; /* Add some padding for easier clicks */
+  text-transform: uppercase; /* For consistency and style */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+header nav a:hover,
+header nav a.active {
+  color: #ffd54f; /* Yellow highlight */
+  transform: translateY(-3px); /* Slight hover effect */
+}
+
+
 /* Footer */
 footer {
   background: #2e7d32;
