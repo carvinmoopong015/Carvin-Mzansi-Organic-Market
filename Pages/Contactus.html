@@ -42,18 +42,26 @@
   <h1>Contact Us</h1>
   <p>We’d love to hear from you! Please fill in the form below or reach out via our contact details.</p>
 
-  <form>
-    <label for="name">Full Name</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+  <!-- Contact Form Section -->
+<section class="contact container">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-    <label for="email">Email</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-    <label for="message">Message</label><br>
-    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
 
-    <button type="submit" class="btn">Send Message</button>
+    <button type="submit" class="btn">Submit</button>
   </form>
+
+  <!-- Where the response message will appear -->
+  <p id="formResponse" class="response"></p>
+</section>
+
 
   <h2>Find Us</h2>
   <div class="map-container">
@@ -72,8 +80,36 @@
     <a href="https://instagram.com/mzansiorganicmarket" target="_blank"><i class="fab fa-instagram"></i></a>
   </div>
 </footer>
+<script>// Select the form and response paragraph
+  const form = document.getElementById('contactForm');
+  const response = document.getElementById('formResponse');
 
-    
+  // Listen for the form submission
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Stop the form from refreshing the page
+
+    // Get the form values
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    // Basic validation
+    if (!name || !email || !message) {
+      response.textContent = "⚠️ Please fill in all fields before submitting.";
+      response.style.color = "red";
+      return;
+    }
+
+    // Show success message
+    response.textContent = `✅ Thank you, ${name}! Your message has been received. We'll get back to you soon.`;
+    response.style.color = "green";
+
+    // Clear the form after submission
+    form.reset();
+  });
+</script>
+ </body>
+</html>  
     
     
     
