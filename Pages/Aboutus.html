@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us - Mzansi Organic Market</title>
-  <link rel="stylesheet" href="../CSS/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
 <body>
 
   <!-- Header -->
   <header>
-      <img src="../Assets/download.jfif" alt="Logo" width="200" height="150">
+    <img src="../Assets/download.jfif" alt="Logo" width="200" height="150">
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -19,63 +21,75 @@
         <li><a href="./Product.html">Shop</a></li>
         <li><a href="./blog.html">Blog</a></li>
         <li><a href="./Contactus.html">Contact Us</a></li>
-         <li><a href="./enquiry.html">Enquiry</a></li>
+        <li><a href="./enquiry.html">Enquiry</a></li>
       </ul>
     </nav>
   </header>
-<!-- About Section -->
-<section class="container about">
-  <h1>About Mzansi Organic Market</h1>
 
-  <div class="accordion">
-    <button class="accordion-header">About Mzansi Organic Market</button>
-    <div class="accordion-content">
-      <p>Founded with the vision to support local farmers and promote healthy living, Mzansi Organic Market offers a wide variety of organic products. Our goal is to provide fresh, locally grown organic produce, skincare, and wellness products that cater to a sustainable lifestyle.</p>
+  <!-- About Section -->
+  <section class="container">
+    <h1>About Mzansi Organic Market</h1>
+    <p>Founded with the vision to support local farmers and promote healthy living, Mzansi Organic Market offers a wide variety of organic products. Our goal is to provide fresh, locally grown organic produce, skincare, and wellness products that cater to a sustainable lifestyle.</p>
+  </section>
+
+  <!-- Accordion Section -->
+  <section class="container">
+    <div class="accordion">
+      <div class="accordion-header">Our Mission</div>
+      <div class="accordion-content">
+        <p>To bring the best organic products from local farmers directly to you, while fostering a healthier community.</p>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <div class="accordion-header">Our Vision</div>
+      <div class="accordion-content">
+        <p>We envision a thriving community where sustainable agriculture and organic living are accessible to all South Africans.</p>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <div class="accordion-header">Our Values</div>
+      <div class="accordion-content">
+        <p>Integrity, sustainability, transparency, and community empowerment form the backbone of our operations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <h2>Meet Our Team</h2>
+    <p>We’re proud of our passionate and hardworking team that makes Mzansi Organic Market possible.</p>
+
+    <input type="text" id="searchInput" placeholder="Search for employees or roles...">
+
+    <div class="team-container" id="teamContainer">
+      <!-- JS will populate cards here -->
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="profileModal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img id="modalImage" src="" alt="Profile Photo">
+      <h3 id="modalName"></h3>
+      <p id="modalRole"></p>
+      <p id="modalBio"></p>
     </div>
   </div>
-
-  <div class="accordion">
-    <button class="accordion-header">Our Mission</button>
-    <div class="accordion-content">
-      <p>To bring the best organic products from local farmers directly to you, while fostering a healthier community.</p>
-    </div>
-  </div>
-
-  <div class="accordion">
-    <button class="accordion-header">Our Team</button>
-    <div class="accordion-content">
-      <p>We are passionate about organic farming, sustainability, and wellness. We work closely with local farmers to ensure all products are free from harmful chemicals.</p>
-    </div>
-  </div>
-</section>
-
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Mzansi Organic Market | All Rights Reserved</p>
     <div class="socials">
-    <a href="https://facebook.com/mzansiorganicmarket" target="_blank"><i class="fab fa-facebook"></i></a>
-   <a href="https://whatsapp.com/mzansiorganicmarket" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://instagram.com/mzansiorganicmarket" target="_blank"><i class="fab fa-instagram"></i></a>
-  </div>
+      <a href="https://facebook.com/mzansiorganicmarket" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://whatsapp.com/mzansiorganicmarket" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/mzansiorganicmarket" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
   </footer>
-<script>
-  const accordions = document.querySelectorAll('.accordion');
 
-  accordions.forEach(acc => {
-    const header = acc.querySelector('.accordion-header');
-    header.addEventListener('click', () => {
-      acc.classList.toggle('active');
-
-      // Close other accordions (optional)
-      accordions.forEach(other => {
-        if (other !== acc) {
-          other.classList.remove('active');
-        }
-      });
-    });
-  });
-</script>
-
+  <!-- JavaScript -->
+  <script src="../js/script.js"></script>
 </body>
 </html>
