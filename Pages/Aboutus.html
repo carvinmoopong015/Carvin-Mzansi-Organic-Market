@@ -23,18 +23,32 @@
       </ul>
     </nav>
   </header>
+<!-- About Section -->
+<section class="container about">
+  <h1>About Mzansi Organic Market</h1>
 
-  <!-- About Section -->
-  <section class="container">
-    <h1>About Mzansi Organic Market</h1>
-    <p>Founded with the vision to support local farmers and promote healthy living, Mzansi Organic Market offers a wide variety of organic products. Our goal is to provide fresh, locally grown organic produce, skincare, and wellness products that cater to a sustainable lifestyle.</p>
+  <div class="accordion">
+    <button class="accordion-header">About Mzansi Organic Market</button>
+    <div class="accordion-content">
+      <p>Founded with the vision to support local farmers and promote healthy living, Mzansi Organic Market offers a wide variety of organic products. Our goal is to provide fresh, locally grown organic produce, skincare, and wellness products that cater to a sustainable lifestyle.</p>
+    </div>
+  </div>
 
-    <h2>Our Mission</h2>
-    <p>To bring the best organic products from local farmers directly to you, while fostering a healthier community.</p>
+  <div class="accordion">
+    <button class="accordion-header">Our Mission</button>
+    <div class="accordion-content">
+      <p>To bring the best organic products from local farmers directly to you, while fostering a healthier community.</p>
+    </div>
+  </div>
 
-    <h2>Our Team</h2>
-    <p>We are passionate about organic farming, sustainability, and wellness. We work closely with local farmers to ensure all products are free from harmful chemicals.</p>
-  </section>
+  <div class="accordion">
+    <button class="accordion-header">Our Team</button>
+    <div class="accordion-content">
+      <p>We are passionate about organic farming, sustainability, and wellness. We work closely with local farmers to ensure all products are free from harmful chemicals.</p>
+    </div>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer>
@@ -45,6 +59,23 @@
     <a href="https://instagram.com/mzansiorganicmarket" target="_blank"><i class="fab fa-instagram"></i></a>
   </div>
   </footer>
+<script>
+  const accordions = document.querySelectorAll('.accordion');
+
+  accordions.forEach(acc => {
+    const header = acc.querySelector('.accordion-header');
+    header.addEventListener('click', () => {
+      acc.classList.toggle('active');
+
+      // Close other accordions (optional)
+      accordions.forEach(other => {
+        if (other !== acc) {
+          other.classList.remove('active');
+        }
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
