@@ -10,13 +10,13 @@ document.querySelectorAll(".accordion-header").forEach(header => {
 
 const teamMembers = [
   { name: "Carvin Moopong", role: "Founder & CEO",  bio: "Leads the vision and strategy for sustainable organic trade in South Africa." },
-  { name: "Sipho Dlamini", role: "Operations Manager", img: "../Assets/2.jpg", bio: "Oversees supply chain, logistics, and vendor management." },
-  { name: "Thandi Nkosi", role: "Marketing Lead", img: "../Assets/3.jpg", bio: "Heads campaigns promoting organic lifestyle and farmer engagement." },
-  { name: "Johan Mthethwa", role: "Sales Executive", img: "../Assets/4.jpg", bio: "Connects customers with the right organic products and deals." },
-  { name: "Ayanda Ndlovu", role: "Customer Support", img: "../Assets/5.jpg", bio: "Ensures smooth communication and problem resolution for all clients." },
-  { name: "Nomsa Khumalo", role: "Content Creator", img: "../Assets/6.jpg", bio: "Writes educational blogs and manages online brand storytelling." },
-  { name: "Zanele Radebe", role: "Finance Officer", img: "../Assets/7.jpg", bio: "Maintains budget, payroll, and financial reports for transparency." },
-  { name: "Bongani Sithole", role: "IT Specialist", img: "../Assets/8.jpg", bio: "Handles website maintenance, tech integrations, and digital security." }
+  { name: "Sipho Dlamini", role: "Operations Manager", bio: "Oversees supply chain, logistics, and vendor management." },
+  { name: "Thandi Nkosi", role: "Marketing Lead", bio: "Heads campaigns promoting organic lifestyle and farmer engagement." },
+  { name: "Johan Mthethwa", role: "Sales Executive", bio: "Connects customers with the right organic products and deals." },
+  { name: "Ayanda Ndlovu", role: "Customer Support", bio: "Ensures smooth communication and problem resolution for all clients." },
+  { name: "Nomsa Khumalo", role: "Content Creator", bio: "Writes educational blogs and manages online brand storytelling." },
+  { name: "Zanele Radebe", role: "Finance Officer", bio: "Maintains budget, payroll, and financial reports for transparency." },
+  { name: "Bongani Sithole", role: "IT Specialist", bio: "Handles website maintenance, tech integrations, and digital security." }
 ];
 
 
@@ -30,7 +30,7 @@ function displayTeam(members) {
     const card = document.createElement("div");
     card.classList.add("team-card");
     card.innerHTML = `
-      <img src="${member.img}" alt="${member.name}">
+     
       <h3>${member.name}</h3>
       <p class="role">${member.role}</p>
     `;
