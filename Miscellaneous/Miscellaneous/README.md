@@ -10,7 +10,7 @@ Project Overview
 Mzansi Organic Market is a modern, responsive e-commerce website designed to promote sustainable, organic, and locally sourced products in South Africa.
 It offers users an easy and visually appealing platform to browse, learn, and shop organic products while empowering local farmers and wellness brands.
 
-The website features a hero banner, product listings, team profiles, contact form with JavaScript validation, and multiple pages including About, Shop, Blog, and Contact.
+The website features a hero banner, product listings, contact form with JavaScript validation, and multiple pages including About, Shop, Blog, and Contact.
 
 Table of Contents
 
@@ -31,23 +31,23 @@ Changelog
 References
 
 Features
-✅ Fully Responsive Layout
+## Fully Responsive Layout
 
 Optimized for mobile, tablet, and desktop.
 
 Uses media queries and flexible CSS components.
 
-✅ Vertical Hero Section
+## Vertical Hero Section
 
 Updated hero section layout (image + text stacked vertically).
 
 Clean and modern structure, centered content.
 
-✅ Team Members Section
+## Team Members Section
 
-Displays team members with name, role, and images.
+Displays team members with name, role.
 
-✅ Form Validation (JavaScript)
+## Form Validation (JavaScript)
 
 Contact form includes:
 
@@ -59,7 +59,7 @@ Real-time feedback
 
 Successful submission alert
 
-✅ Navigation Bar
+## Navigation Bar
 
 Links to:
 
@@ -73,11 +73,11 @@ Blog
 
 Contact
 
-✅ Product Display
+## Product Display
 
 Organized product cards (organic vegetables, fruits, wellness items, etc.)
 
-✅ Social Media Integration
+## Social Media Integration
 
 Facebook
 
@@ -85,7 +85,7 @@ Instagram
 
 WhatsApp
 
-✅ Footer Content
+## Footer Content
 
 Copyright
 
