@@ -54,3 +54,46 @@ All notable changes to the Mzansi Organic Market Website will be documented here
 - Navigation menu and footer.
 - Placeholder assets and images.
 
+Changelog
+v1.3 — (2025-11-19)
+## Vertical hero layout implemented
+
+Hero section image + text now stacked vertically for better alignment.
+
+## Contact form JavaScript added
+
+Error messages
+
+Validation rules
+
+Success alert
+
+## Navigation improvements
+
+Spacing, alignment, and responsiveness improved.
+
+## Cleaned code structure
+
+Removed unused tags, fixed section nesting, improved indentation.
+
+v1.2
+
+Added About, Blog, Shop, and Contact pages.
+
+Added basic footer and social media icons.
+
+v1.1
+
+Added initial hero section, product grid, and navigation bar.
+
+v1.0
+
+Initial project structure created.
+
+References
+
+W3Schools CSS Reference
+https://www.w3schools.com/cssref/
+
+W3Schools Mobile Navbar Tutorial
+https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
