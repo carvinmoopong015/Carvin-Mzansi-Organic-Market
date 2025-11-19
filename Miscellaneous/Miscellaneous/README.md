@@ -170,7 +170,7 @@ If the file is named form.js, ensure it is linked inside Contactus.html:
 │   ├── Blog.html                  # Blog Page
 │   └── Contactus.html             # Contact page
 │
-└── index.html
+└── index.html                     # Home page 
 
 ## References
 MDN Web Docs – HTML Guide
