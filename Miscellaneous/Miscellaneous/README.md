@@ -159,9 +159,11 @@ If the file is named form.js, ensure it is linked inside Contactus.html:
 │   └── form.js
 │
 |── Miscellaneous
-|       ├──Changelog.md           # Change begin logged to the versions of website
-|       └──READEME.md             # Changes made to the website 
-|      
+|       ├──  Robot.txt             
+|       ├──  Sitemap.xml
+|       ├── Changelog.md           # Change begin logged to the versions of website
+|       └── READEME.md             # Changes made to the website 
+|       
 ├── /Pages
 │   ├── Aboutus.html               # About page
 │   ├── Product.html               # Product page
